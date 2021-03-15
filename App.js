@@ -20,9 +20,7 @@ export default class App extends Component {
       <View style={styles.container}>
         <FlatList
           data={this.state.feed}
-          keyExtractor={(item) => {
-            item.id;
-          }}
+          keyExtractor={(item) => item.id}
           renderItem={({ item }) => <Pessoa data={item} />}
         />
       </View>
