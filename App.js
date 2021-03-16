@@ -23,6 +23,10 @@ export default class App extends Component {
         <FlatList
           keyExtractor={(item) =>item.id}
           data={this.state.feed}
+
+
+          keyExtractor={(item) => item.id}
+
           renderItem={({ item }) => <Pessoa data={item} />}
         />
       </View>
